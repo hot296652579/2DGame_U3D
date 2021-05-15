@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{8A3A7B60-0E04-E1C4-071B-6792558F2011}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FadeEffect.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AudioManager.cs" Line="102" Column="56" />
+      <File FileName="Assets/Frog.cs" Line="54" Column="14" />
+      <File FileName="Assets/Scripts/PlayerControl.cs" Line="232" Column="1" />
+      <File FileName="Assets/Scripts/PlayerAniControl.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/PlayHealth.cs" Line="25" Column="31" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/FadeEffect.cs" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="2DGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="FadeEffect.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2c3e77f0-792a-4574-8799-2e1c0d2ce5c4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
