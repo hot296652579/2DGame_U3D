@@ -7,7 +7,7 @@ public class EnterNextScene : MonoBehaviour
     // Start is called before the first frame update
     int playerId;
     
-    public LoadManager loadManager;
+    //public LoadManager loadManager;
 
     void Awake()
     {
@@ -18,7 +18,7 @@ public class EnterNextScene : MonoBehaviour
     {
         if (collision.gameObject.layer == playerId)
         {
-            loadManager.LoadNextScene();
+            LoadManager.LoadNextScene();
         }
     }
 }

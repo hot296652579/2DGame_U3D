@@ -44,7 +44,6 @@ public class Frog : MonoBehaviour
 
     void moveHandler()
     {
-        print(leftPos.x);
         if (localLeft)
         {
             if (collider2D.IsTouchingLayers(groundLayer))

@@ -24,13 +24,12 @@ public class LoadManager : MonoBehaviour
 
         current = this;
         DontDestroyOnLoad(gameObject);
-
-        slider = LoadSlider.GetComponentInChildren<Slider>();
-        progressTxt = LoadSlider.GetComponentInChildren<Text>();
     }
 
     private void Start()
     {
+        slider = LoadSlider.GetComponentInChildren<Slider>();
+        progressTxt = LoadSlider.GetComponentInChildren<Text>();
         LoadSlider.gameObject.SetActive(false);
     }
 
@@ -39,7 +38,7 @@ public class LoadManager : MonoBehaviour
         current.fadeEft = eft;
     }
 
-    public void LoadNextScene()
+    public static void LoadNextScene()
     {
         current.fadeEft.playFade();
         current.Invoke("LoadScene", 1.2f);

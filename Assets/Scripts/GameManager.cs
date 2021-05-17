@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    enum GameState
+    {
+        GameTimeLine,
+        GamePlay
+    }
+
     // Start is called before the first frame update 
     private static GameManager current;
     FadeEffect fadeEft;
