@@ -82,11 +82,14 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\Door.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\BoomEft.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CountDownSlider.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\DoorEventSystem.cs" />
     <Compile Include="Assets\Scripts\EmissionPulse.cs" />
+    <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\EnterNextScene.cs" />
     <Compile Include="Assets\Scripts\FPS.cs" />
     <Compile Include="Assets\Scripts\FadeEffect.cs" />
@@ -95,6 +98,7 @@
     <Compile Include="Assets\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\LoadManager.cs" />
     <Compile Include="Assets\Scripts\Orb.cs" />
+    <Compile Include="Assets\Scripts\PlayFire.cs" />
     <Compile Include="Assets\Scripts\PlayHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerAniControl.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />

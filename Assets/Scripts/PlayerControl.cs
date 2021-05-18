@@ -53,6 +53,8 @@ public class PlayerControl : MonoBehaviour
     public Animator animator;
     public GameObject deathEnemyPre;
 
+    public GameObject firePoint;
+
     void Start()
     {
         rg2D = GetComponent<Rigidbody2D>();
@@ -151,9 +153,18 @@ public class PlayerControl : MonoBehaviour
             return;
 
         if (xVolcity < 0)
-           transform.localScale = new Vector3(-1, 1, 1);
-        if(xVolcity > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            firePoint.transform.localScale = new Vector3(-1, 1, 1);
+            //transform.Rotate(0f, 180f, 0f);
+        }
+           
+        if (xVolcity > 0)
+        {
             transform.localScale = new Vector3(1, 1, 1);
+            firePoint.transform.localScale = new Vector3(1, 1, 1);
+            //transform.Rotate(0f, 0f, 0f);
+        }   
     }
 
     private void standUp()

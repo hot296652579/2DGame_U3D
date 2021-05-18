@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69bea36382ff4a978e4a78d3a87acce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadSlider: {fileID: 0}
+  LoadSlider: {fileID: 5157779219200870894, guid: 773ba8b9112ee447d874d8ea94354be9,
+    type: 3}

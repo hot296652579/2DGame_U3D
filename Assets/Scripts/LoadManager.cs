@@ -23,14 +23,14 @@ public class LoadManager : MonoBehaviour
         }
 
         current = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); 
     }
 
     private void Start()
     {
-        slider = LoadSlider.GetComponentInChildren<Slider>();
-        progressTxt = LoadSlider.GetComponentInChildren<Text>();
-        LoadSlider.gameObject.SetActive(false);
+        //slider = LoadSlider.GetComponentInChildren<Slider>();
+        //progressTxt = LoadSlider.GetComponentInChildren<Text>();
+        //LoadSlider.gameObject.SetActive(false);
     }
 
     public static void registerFade(FadeEffect eft)
@@ -46,7 +46,7 @@ public class LoadManager : MonoBehaviour
 
     void LoadScene()
     {
-        LoadSlider.gameObject.SetActive(true);
+        //LoadSlider.gameObject.SetActive(true);
         StartCoroutine(LoadSceneAsynce());
     }
 
@@ -56,12 +56,12 @@ public class LoadManager : MonoBehaviour
         asyncLoad.allowSceneActivation = false;
         while (!asyncLoad.isDone)
         {
-            slider.value = asyncLoad.progress;
-            progressTxt.text = "Loading progress: " + (asyncLoad.progress * 100) + "%";
+            //slider.value = asyncLoad.progress;
+            //progressTxt.text = "Loading progress: " + (asyncLoad.progress * 100) + "%";
             if (asyncLoad.progress >= 0.9f)
             {
-                slider.value = 1;
-                progressTxt.text = "Loading progress:100%";
+                //slider.value = 1;
+                //progressTxt.text = "Loading progress:100%";
                 asyncLoad.allowSceneActivation = true;
             }
             yield return null;

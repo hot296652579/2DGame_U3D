@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8219160931833805092}
   - component: {fileID: 8219160931833805098}
   - component: {fileID: 8219160931833805099}
+  - component: {fileID: 2247254573740226655}
   m_Layer: 10
   m_Name: Frog
   m_TagString: Untagged
@@ -160,6 +161,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2247254573740226655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219160931833805089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4888a906557564ba6b9199d1f178a0d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &8219160932025191346
 GameObject:
   m_ObjectHideFlags: 0
