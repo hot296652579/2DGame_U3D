@@ -25,17 +25,17 @@ public class PlayerControl : MonoBehaviour
     private Vector2 crouchCollSize;
     private Vector2 crouchCollOffset;
 
-    private bool crouchHoldPree;
-    private bool crouchPree;
-    private bool jumpPree;
-    private bool jumpHoldPree;
+    public bool crouchHoldPree;
+    public bool crouchPree;
+    public bool jumpPree;
+    public bool jumpHoldPree;
  
 
     private float jumpForce = 6.5f;
     private float jumpHoldForce = 1.5f;
     private float jumpCurrentTime;
     private float jumpDirTime = 0.1f;
-    private float crouchJumpBoost = 4.5f;
+    private float crouchJumpBoost = 5.8f;
     private float hangingJumpForce = 18f;
 
     private float footOffset = 0.4f;
@@ -55,8 +55,11 @@ public class PlayerControl : MonoBehaviour
 
     public GameObject firePoint;
 
+    private Joystick joystick;
+
     void Start()
     {
+        joystick = GameObject.FindWithTag("Joystick").GetComponent<Joystick>();
         rg2D = GetComponent<Rigidbody2D>();
         box2D = GetComponent<BoxCollider2D>();
 
@@ -72,10 +75,10 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
-        crouchHoldPree = Input.GetButton("Crouch");
-        crouchPree = Input.GetButtonDown("Crouch");
-        jumpPree = Input.GetButtonDown("Jump");
-        jumpHoldPree = Input.GetButton("Jump");
+        //crouchHoldPree = Input.GetButton("Crouch");
+        //crouchPree = Input.GetButtonDown("Crouch");
+        //jumpPree = Input.GetButtonDown("Jump");
+        //jumpHoldPree = Input.GetButton("Jump");
     }
 
     private void FixedUpdate()
@@ -125,13 +128,14 @@ public class PlayerControl : MonoBehaviour
     {
         if (isHanging)
             return;
-        xVolcity = Input.GetAxis("Horizontal");
+        //xVolcity = Input.GetAxis("Horizontal");
+        xVolcity = joystick.Horizontal;
 
         if (isOnGround)
         {
             if (crouchHoldPree && !isCrouch)
                 crouch();
-            else if (!crouchHoldPree && isCrouch && !isHeadBlocked)
+            else if (crouchHoldPree && isCrouch && !isHeadBlocked)
                 standUp();
         }
         else
@@ -167,21 +171,21 @@ public class PlayerControl : MonoBehaviour
         }   
     }
 
-    private void standUp()
+    public void standUp()
     {
         isCrouch = false;
         box2D.size = standUpCollSize;
         box2D.offset = standupCollOffset;
     }
 
-    private void crouch()
+    public void crouch()
     {
         isCrouch = true;
         box2D.size = crouchCollSize;
         box2D.offset = crouchCollOffset;
     }
 
-    private void jumpHandler()
+    public void jumpHandler()
     {
         if (isHanging)
         {

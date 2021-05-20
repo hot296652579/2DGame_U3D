@@ -1,18 +1,25 @@
 ﻿<Properties StartupConfiguration="{314EC8C7-DA46-5B6C-E926-35C690BD2B64}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerControl.cs">
     <Files>
-      <File FileName="Assets/Scripts/LoadManager.cs" Line="58" Column="10" />
-      <File FileName="Assets/Scripts/PlayFire.cs" Line="49" Column="10" />
-      <File FileName="Assets/Scripts/EnemyHealth.cs" Line="9" Column="27" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="10" Column="5" />
-      <File FileName="Assets/Scripts/PlayerControl.cs" Line="232" Column="81" />
+      <File FileName="Assets/Scripts/PlayerControl.cs" Line="58" Column="31" />
+      <File FileName="Assets/Scripts/onPress/OnAttackPressBtn.cs" Line="13" Column="51" />
+      <File FileName="Assets/Scripts/onPress/OnCrouchPressBtn.cs" Line="16" Column="51" />
+      <File FileName="Assets/Scripts/onPress/OnJumpPressBtn.cs" Line="11" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="2DGame_U3D" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Joystick Pack" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Base" expanded="True" />
+                  <Node name="Joysticks" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Scripts" expanded="True">
+                <Node name="Editor" expanded="True" />
+                <Node name="onPress" expanded="True" />
                 <Node name="PlayerControl.cs" selected="True" />
               </Node>
             </Node>
@@ -23,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="af4b61cd-c811-4c91-8036-a049679d40c8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f1569853-61fb-4091-b4f3-3d409d29e3fd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float health;
+    public GameObject deathPre;
 
     public void TakeDamage(float damage)
     {
@@ -17,6 +18,9 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        Instantiate(deathPre, transform.position, transform.rotation);
+        gameObject.SetActive(false);
+        AudioManager.playDeathAudio();
     }
 }

@@ -51,7 +51,7 @@ public class CountDownSlider : MonoBehaviour
         if(playTime <= 0f)
         {
             playTime = totalTime;
-            GameManager.GameOver();
+            //GameManager.GameOver();
         }
     }
 }

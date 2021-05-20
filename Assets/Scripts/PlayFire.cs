@@ -10,24 +10,20 @@ public class PlayFire : MonoBehaviour
     public GameObject boomEft;
     public LayerMask groundLayer;
     public LineRenderer lineRender;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        Fire();
+        //Fire();
     }
 
-    void Fire()
+    public void Fire()
     {
-        if (Input.GetButtonDown("Fire"))
-        {
-            StartCoroutine(FireAction());
-        }
+        //if (Input.GetButtonDown("FireBullet"))
+        //{
+        //    StartCoroutine(FireAction());
+        //}
+        StartCoroutine(FireAction());
     }
 
     IEnumerator FireAction()
@@ -50,7 +46,7 @@ public class PlayFire : MonoBehaviour
             EnemyHealth enemyHealth = hint.collider.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(1);
+                enemyHealth.TakeDamage(30);
                 Instantiate(boomEft, hint.point, Quaternion.identity);
 
                 lineRender.SetPosition(0, pos);
@@ -60,10 +56,7 @@ public class PlayFire : MonoBehaviour
         else
         {
             lineRender.SetPosition(0, pos);
-
-            Vector3 newMaxDis= new Vector3(maxDistance.x, -5f, maxDistance.z);
-            lineRender.SetPosition(1, newMaxDis);
-            Debug.Log(maxDistance.y);
+            lineRender.SetPosition(1, maxDistance);
         }
 
         lineRender.enabled = true;
