@@ -760,6 +760,24 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>/Users/javan/u3d/Adventure2DGame/2DGame_U3D/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
