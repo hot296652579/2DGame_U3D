@@ -2,7 +2,7 @@
 using UnityEngine.AddressableAssets;
 using System.Collections;
 
-public class GameSceneso :ScriptableObject
+public class GameSceneSO : ScriptableObject
 {
     public GameSceneType sceneType;
     public AssetReference assetReference;
