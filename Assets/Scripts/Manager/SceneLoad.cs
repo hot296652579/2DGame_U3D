@@ -14,6 +14,7 @@ public class SceneLoad : MonoBehaviour
 
     [Header("Load Events")]
     [SerializeField] private LoadEventChannelSO _loadLocation = default;
+    [SerializeField] private LoadEventChannelSO _coldStartupLocation = default;
 
     [Header("Broadcasting on")]
     [SerializeField] private BoolEventChannelSO _toggleLoadingScreen = default;
@@ -32,6 +33,13 @@ public class SceneLoad : MonoBehaviour
     private void OnEnable()
     {
         _loadLocation.onLoadingRequested += LoadLocation;
+        _coldStartupLocation.onLoadingRequested += LocationColdStartup;
+    }
+
+    private void OnDestroy()
+    {
+        _loadLocation.onLoadingRequested -= LoadLocation;
+        _coldStartupLocation.onLoadingRequested -= LocationColdStartup;
     }
 
     void LoadLocation(GameSceneSO gameSceneso, bool showLoading)
@@ -44,6 +52,25 @@ public class SceneLoad : MonoBehaviour
             gameManagerLoadingOpHandler = gamePlayScene.assetReference.LoadSceneAsync(LoadSceneMode.Additive, true);
             gameManagerLoadingOpHandler.Completed += OnGameplayMangersLoaded;
         }
+    }
+
+    private void LocationColdStartup(GameSceneSO currentlyOpenedLocation, bool showLoadingScreen)
+    {
+        _currentLoadedScene = currentlyOpenedLocation;
+
+        if (_currentLoadedScene.sceneType == GameSceneSO.GameSceneType.Location)
+        {
+            //Gameplay managers is loaded synchronously
+            gameManagerLoadingOpHandler = gamePlayScene.assetReference.LoadSceneAsync(LoadSceneMode.Additive, true);
+            gameManagerLoadingOpHandler.Completed += onLocationStartUpLoaded;
+        }
+    }
+
+    private void onLocationStartUpLoaded(AsyncOperationHandle<SceneInstance> obj)
+    {
+        sceneInstance = gameManagerLoadingOpHandler.Result;
+
+        StartGameplay();
     }
 
     void OnGameplayMangersLoaded(AsyncOperationHandle<SceneInstance> obj)

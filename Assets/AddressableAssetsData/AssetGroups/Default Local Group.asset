@@ -29,6 +29,18 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 2213092ce3b56e6439e35516776f2769
+    m_Address: Assets/ScriptableObjects/EventChannels/StartUp_Channel.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9fdcadc8db3264cecbd8d3e42c44737e
+    m_Address: Assets/Scenes/Initailization.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 64fa25f9e24fd41b6b416c2193d02e87, type: 2}
   m_SchemaSet:
