@@ -6,6 +6,7 @@ public class StartGame : MonoBehaviour
 {
     [SerializeField]
     private GameSceneSO _locationToLoad;
+    [SerializeField]
     private bool _showLoadScreen = default;
 
     [SerializeField]

@@ -18542,8 +18542,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6224309970585314815, guid: 0d7ba28dee0af4cfb9b37ffe9b538960, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0d7ba28dee0af4cfb9b37ffe9b538960, type: 3}
+--- !u!1 &1035220013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3395050315176915744, guid: 0d7ba28dee0af4cfb9b37ffe9b538960,
+    type: 3}
+  m_PrefabInstance: {fileID: 1035220012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1035220014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035220013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783d82e0b28454ef19e7aa55a6fba361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelScene: {fileID: 0}
+  _showLoadScreen: 1
+  loadEventChannelSO: {fileID: 0}
 --- !u!4 &1161133793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4357629085409324, guid: e7abe1ada88c5934bad18c1019a0050e,

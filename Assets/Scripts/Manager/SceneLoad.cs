@@ -52,6 +52,10 @@ public class SceneLoad : MonoBehaviour
             gameManagerLoadingOpHandler = gamePlayScene.assetReference.LoadSceneAsync(LoadSceneMode.Additive, true);
             gameManagerLoadingOpHandler.Completed += OnGameplayMangersLoaded;
         }
+        else
+        {
+            UnloadPreviousScene();
+        }
     }
 
     private void LocationColdStartup(GameSceneSO currentlyOpenedLocation, bool showLoadingScreen)

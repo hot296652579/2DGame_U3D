@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 412429866}
   - component: {fileID: 412429867}
   m_Layer: 0
-  m_Name: StarUp
+  m_Name: StarUpInitializer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412429865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 298.82428, y: 211.4397, z: -97.92648}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 412429865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be6f3e7d1ae7ba4f944f52c1dbc2dca, type: 3}
+  m_Script: {fileID: 11500000, guid: 90773e18226c0473d8000a27bf3be894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _thisSceneSO: {fileID: 11400000, guid: d3fd19ee36c4d47d283d600a5a30da5d, type: 2}
@@ -624,6 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _locationToLoad: {fileID: 11400000, guid: 71de70073c3174b8e9a7ee209317ea05, type: 2}
+  _showLoadScreen: 1
   _startGameEvent: {fileID: 11400000, guid: 4f80ee629a37649ed83955a76b6d6033, type: 2}
   _startNewGameEvent: {fileID: 11400000, guid: d85a3cebc7084491d96499c006caf60e, type: 2}
 --- !u!4 &661177435
