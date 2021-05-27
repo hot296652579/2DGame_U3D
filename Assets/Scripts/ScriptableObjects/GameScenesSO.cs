@@ -6,6 +6,7 @@ public class GameSceneSO : ScriptableObject
 {
     public GameSceneType sceneType;
     public AssetReference assetReference;
+    public AudioObjectSO musicTrack;
 
     public enum GameSceneType
     {

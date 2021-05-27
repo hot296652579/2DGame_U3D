@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26e83b333e6e4425b5fc5529a19bce3, type: 3}
+  m_Name: Jump_SFX
+  m_EditorClassIdentifier: 
+  isLooping: 0
+  audioClipsGroups:
+  - sequenceMode: 2
+    audioClips:
+    - {fileID: 8300000, guid: d2f7946a4b9b6af4dbdad8620941f424, type: 3}

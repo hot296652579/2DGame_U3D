@@ -89,7 +89,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\LoadingScreenManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioData\AudioObjectSO.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\BoomEft.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\EmissionPulse.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\EnterNextScene.cs" />
+    <Compile Include="Assets\Scripts\Event\ScriptableObjects\AudioEventChanelSO.cs" />
     <Compile Include="Assets\Scripts\Event\ScriptableObjects\BoolEventChannelSO.cs" />
     <Compile Include="Assets\Scripts\Event\ScriptableObjects\LoadEventChannelSO.cs" />
     <Compile Include="Assets\Scripts\Event\ScriptableObjects\VoidEventChannelSO.cs" />
@@ -111,6 +112,8 @@
     <Compile Include="Assets\Scripts\InitializationLoader.cs" />
     <Compile Include="Assets\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\LoadManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\AudioManagerNew.cs" />
+    <Compile Include="Assets\Scripts\Manager\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\Manager\SceneLoad.cs" />
     <Compile Include="Assets\Scripts\Manager\UIMenuManager.cs" />
     <Compile Include="Assets\Scripts\Orb.cs" />
